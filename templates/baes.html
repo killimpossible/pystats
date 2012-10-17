@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+                <title>{% block title %}{% endblock title %}</title>
+                <!--[if lte IE 8]><script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script><![endif]-->
+				<!--[if lte IE 8]><script src="scripts/css3-mediaqueries.js"></script><![endif]-->
+                <meta charset="utf-8">
+                <link href="{{ STATIC_URL }}css/base.css" rel="stylesheet" >
+                {% block css %}{% endblock css %}
+                {% block js %}{% endblock js %}
+        </head>
+
+        <body>
+        	<div id="wrapper">
+                {% block main %}{% endblock main %}        	
+        	</div>
+        </body>
+</html>
